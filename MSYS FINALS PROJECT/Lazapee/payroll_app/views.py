@@ -45,6 +45,6 @@ def logout(request):
         del request.session['username']
     return redirect('login')
 
-def aunthentication(request):
+def authentication(request):
     return 'user_id' in request.session
 
